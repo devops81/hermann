@@ -11,7 +11,7 @@ stage ('Build') {
     checkout scm
 
     // install required bundles
-    sh 'apt-get update && apt-get install -y ruby'
+    sh 'yum update && yum install -y ruby'
     sh 'bundle install'
 
     // build and run tests with coverage
