@@ -11,7 +11,7 @@ stage ('Build') {
     checkout scm
 
     // install required bundles
-    sh 'apt install ruby'
+    sh 'sudo apt install ruby'
     sh 'bundle install'
 
     // build and run tests with coverage
